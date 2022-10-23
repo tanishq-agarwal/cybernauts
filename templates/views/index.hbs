@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>header}}
+</head>
+
+<body>
+    <div class="hero">
+        <div class="main main1">
+            <div class='register'>
+                <button type='button' value="Submit" onClick="toggleClass()">Register the product</button>
+            </div>
+        </div>
+    </div>
+    <div class='hero'>
+        <div class='main'>
+            <div class='leftMain'>
+                <div class='imgbox'>
+                    <img src="./img/login.jpg" alt="logo" />
+                </div>
+            </div>
+            <div class='rightMain'>
+                <div class='cross'>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x"
+                        viewBox="0 0 16 16" onClick="closing()">
+                        <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </div>
+                <div class='content'>
+                    <h1>Register your Product</h1>
+                </div>
+                <div class='formMain'>
+                    <form action="/index" method="post">
+                        <div class='box'>
+                            <div class='box1'>
+                                <p>Category</p>
+                                <select name="category" id="cat">
+                                    <option value="" selected disabled hidden>Select Category</option>
+                                    <option value="car">Car</option>
+                                    <option value="bike">Bike</option>
+                                    <option value="cycle">Cycle</option>
+                                    <option value="truck">Truck</option>
+                                </select>
+                            </div>
+                            <div class='box1'>
+                                <p>Model</p>
+                                <select name="model" id="mod">
+                                    <option value="" selected disabled hidden>Select Model</option>
+                                    <option value="base model">Base Model</option>
+                                    <option value="new model">New Model</option>
+                                    <option value="super model">Super Model</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class='box'>
+                            <div class='box1'>
+                                <p>Serial number<span>*</span></p>
+                                <input type="text" name="serial" />
+                            </div>
+                            <div class='box1'>
+                                <p>Date of Invoice</p>
+                                <input type="date" id="birthday" name="calendar" />
+                            </div>
+                        </div>
+                        <div class='box' style="display: block;">
+                            <div class='box2'>
+                                <p>Upload File</p>
+                                <div class='drag'>
+                                    <p>Drag files here or&nbsp;<span onClick="toggle()">browse</span></p>
+                                    <input onClick="browse()" id="handle" type="file" hidden name="file"></input>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='box' style="display: block;">
+                            <div class='box2'>
+                                <button type='submit' value="Submit">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=DM+Sans&family=Fira+Sans&family=Josefin+Sans:ital@1&family=Kanit:wght@300&family=Oleo+Script+Swash+Caps&family=Poppins:wght@300;400&family=Roboto:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+.main1 {
+  background-image: url("../img/login.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.hero1 {
+  display: none;
+}
+.hero .register {
+  margin: auto;
+}
+.hero .register button {
+  border: none;
+  outline: none;
+  background-color: rgb(163, 115, 115);
+  padding: 1rem;
+  border-radius: 2rem;
+  width: 32rem;
+  color: #fff;
+  cursor: pointer;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.hero .main {
+  width: 100rem;
+  height: 65rem;
+  background-color: #fff;
+  display: flex;
+  overflow: hidden;
+  margin: 0 3rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.hero .main .leftMain {
+  width: 40%;
+  height: 100%;
+  background-color: red;
+}
+.hero .main .leftMain .imgbox {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.hero .main .leftMain .imgbox img {
+  width: 100%;
+  height: 65rem;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.hero .main .rightMain {
+  width: 60%;
+  height: 100%;
+  padding: 4rem;
+}
+.hero .main .rightMain .formMain {
+  margin: 2rem;
+}
+.hero .main .rightMain .formMain .box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.hero .main .rightMain .formMain .box .box2 p {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  font-weight: 600;
+  color: grey;
+}
+.hero .main .rightMain .formMain .box .box2 button {
+  border: none;
+  outline: none;
+  background-color: red;
+  padding: 1rem;
+  border-radius: 2rem;
+  width: 12rem;
+  color: #fff;
+  cursor: pointer;
+}
+.hero .main .rightMain .formMain .box .box2 .drag {
+  display: flex;
+  border: 2px dashed gray;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  width: 100%;
+  padding: 4rem;
+}
+.hero .main .rightMain .formMain .box .box2 .drag p {
+  display: flex;
+}
+.hero .main .rightMain .formMain .box .box2 .drag p span {
+  color: red;
+}
+.hero .main .rightMain .formMain .box .box2 .drag p span:hover{
+  cursor: pointer;
+}
+.hero .main .rightMain .formMain .box .box1 p {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  font-weight: 600;
+}
+.hero .main .rightMain .formMain .box .box1 p span {
+  color: red;
+  margin-left: 0.2rem;
+}
+.hero .main .rightMain .formMain .box .box1 input {
+  width: 20rem;
+  padding: 1rem;
+  outline: none;
+}
+.hero .main .rightMain .formMain .box .box1 select {
+  width: 20rem;
+  padding: 1rem;
+  border-radius: 4px;
+  outline: none;
+}
+.hero .main .rightMain .content {
+  margin: 2rem;
+}
+.hero .main .rightMain .content h1 {
+  margin: 1rem 0 3rem 0;
+  font-size: 2.2rem;
+}
+.hero .main .rightMain .cross {
+  text-align: right;
+  width: 100%;
+}
+.hero .main .rightMain .cross svg {
+  border: 1px solid black;
+  font-size: 2.7rem;
+  padding: 0.4rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  html {
+    font-size: 57%;
+  }
+}
+
+@media (max-width: 998px) {
+  html {
+    font-size: 53%;
+  }
+}
+
+@media (max-width: 878px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media (max-width: 780px) {
+  html {
+    font-size: 35%;
+  }
+  .hero .main .rightMain .formMain .box .box1 select {
+    font-size: 1.6rem;
+  }
+  .hero .main .rightMain .formMain .box .box1 input {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 540px) {
+  html {
+    font-size: 30%;
+  }
+}
+@media (max-width: 460px) {
+  html {
+    font-size: 25%;
+  }
+  .hero .main .rightMain .cross svg {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  .hero .main .rightMain .formMain .box .box2 button {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 380px) {
+  html {
+    font-size: 20%;
+  }
+}
